@@ -1,0 +1,1 @@
+define(function(require){var exports={};return exports.init=function(){},exports});

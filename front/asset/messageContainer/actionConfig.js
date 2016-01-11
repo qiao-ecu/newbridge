@@ -1,0 +1,1 @@
+define(function(require){return{"package":"messageContainer",resource:{Action:require("./Action"),Model:require("./Model"),View:require("./View"),entry:require("./entry"),tpl:require("tpl!./main.tpl")},injection:[{id:"messageContainer.Action",method:{constructor:["messageContainer.Model","messageContainer.View"]}}]}});

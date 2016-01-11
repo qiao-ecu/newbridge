@@ -1,0 +1,1 @@
+define(function(require){var exports={},e=window.require,t=require("./git"),n=require("./strategy"),i=e(process.cwd()+"/package.json");return exports.init=function(e){var r=i.updateDuration||6e5;if(i.autoupdate)n.run().then(e),setInterval(function(){console.log("正在获取更新"),t.fetch().then(function(e){if(e)console.log("更新下载成功");else console.log("无更新")})},r);else e()},exports});

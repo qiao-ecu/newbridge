@@ -1,0 +1,120 @@
+@import "mixin.less";
+.ui-tree-node-indicator {
+    background-image: url(img/esui-open-icon.png);
+}
+
+.ui-tree-node-indicator-expanded {
+    background-image: url(img/esui-close-icon.png);
+    z-index: 2;
+}
+
+.ui-tree-node-indicator-empty,
+.ui-tree-node-indicator-previous,
+.ui-tree-node-indicator-far-previous {
+    background-image: none;
+}
+
+.ui-tree-content-wrapper {
+    border: none;
+}
+
+.ui-tree-content-wrapper-selected {
+    color: #fff;
+    background: #00aef3;
+    .border-radius(3px);
+}
+
+.ui-tree-node {
+    line-height: 26px;
+    overflow: visible;;
+}
+
+.ui-tree-node-indicator {
+    position: relative;;
+    overflow: visible;
+    margin: 6px 3px 0 0;
+}
+
+.ui-tree-node-indicator-far-previous {
+    &:before {
+        content: "";
+        display: block;
+        border-left: 1px solid #ccc;
+        position: absolute;
+        left: 6px;
+        top: 0;
+        width: 10px;
+        height: 26px;
+    }
+}
+
+.ui-tree-node-indicator-previous {
+    &:before {
+        content: "";
+        display: block;
+        border-left: 1px solid #ccc;
+        position: absolute;
+        left: 6px;
+        top: -20px;
+        width: 10px;
+        height: 50px;
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        border-bottom: 1px solid #ccc;
+        position: absolute;
+        left: 6px;
+        top: -16px;
+        width: 11px;
+        height: 22px;
+    }
+}
+
+.ui-tree-sub-root {
+    .leaf-node {
+       .ui-tree-node-indicator-previous {
+             &:before {
+                height: 25px;
+                top: -19px;
+            }
+        } 
+    }
+    
+    .folder-node {
+        .ui-tree-node-indicator-current {
+            z-index: 2;
+        }
+    }
+    li:last-child {
+        .folder-node + ul {
+            .ui-tree-node-indicator-far-previous {
+                &:before {
+                    display: none;
+                }
+            }
+        }
+        
+        .folder-node {
+            .ui-tree-node-indicator-previous {
+                &:before {
+                    height: 26px;
+                }
+            }
+        }
+    }
+}
+
+.ui-tree-node-indicator-current.ui-tree-node-indicator-empty {
+     &:after {
+        content: "";
+        display: block;
+        border-bottom: 1px solid #ccc;
+        position: absolute;
+        left: 0;
+        top: -8px;
+        width: 10px;
+        height: 14px;
+    }
+}

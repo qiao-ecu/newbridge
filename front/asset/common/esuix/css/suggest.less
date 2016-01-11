@@ -1,0 +1,57 @@
+@import "mixin.less";
+.ui-suggest {
+    display: inline-block;
+    border: solid 1px #d5d5d5;
+    font-size: 14px;
+    line-height: 30px;
+    background-color: #fff;
+    .border-radius(3px);
+    overflow: hidden;
+}
+.ui-suggest-layer-hidden {
+    display: none;
+}
+.ui-suggest-item {
+    color: #8a8c8d;
+    border-bottom: solid 1px #d5d5d5;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    margin-right: 5px;
+    &:hover{
+        color: #000;
+    }
+}
+.ui-suggest-input {
+    border: none;
+    outline: none;
+    height: 16px;
+    line-height: 16px;
+    padding: 7px 0 7px 10px;
+    font-size: 12px;
+    font-family: "Microsoft YaHei", Arial, sans-serif;
+}
+
+.ui-suggest-icon {
+    float: right;
+    background: url(img/zoom.png) no-repeat;
+    margin: 9px 9px 0 0;
+    width: 16px;
+    height: 16px;
+}
+
+.suggest-layer-content {
+    background: #fff;
+    padding: 0 5px 0 10px;
+    border: 1px solid #d5d5d5;
+    ol {
+        max-height: 180px;
+        overflow: auto;
+
+        li:last-child {
+            border: none;
+        }
+    }
+    
+}

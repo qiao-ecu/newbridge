@@ -1,0 +1,1 @@
+define(function(require){var exports={},e=window.localStorage;return exports.setItem=function(t,i){e.setItem(t,i)},exports.getItem=function(t){return e.getItem(t)},exports.removeItem=function(t){e.removeItem(t)},exports.clear=function(){e.clear()},exports});

@@ -1,0 +1,1 @@
+define(function(require){var exports={},e=navigator.userAgent.toLowerCase();return exports.ie=function(){var t=e.match(/(?:msie\s([\w.]+))/),i=e.match(/(?:trident.*rv:([\w.]+))/);if(t&&i&&t[1]&&i[1])return Math.max(1*t[1],1*i[1]);else if(t&&t[1])return 1*t[1];else if(i&&i[1])return 1*i[1];else return 0}(),exports.webkit=e.indexOf(" applewebkit/")>-1,exports});

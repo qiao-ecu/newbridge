@@ -1,0 +1,1 @@
+define(function(require){return function(e,t,i){if(require("./isArray")(e)){for(var n=e.length,r=0;n>r;r++)if("function"==typeof t)t.call(i,e[r],r,e)}else for(var a in e)if(e.hasOwnProperty(a))t.call(i,a,e[a],e)}});

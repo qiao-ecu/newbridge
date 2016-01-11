@@ -1,0 +1,1 @@
+define(function(require){var exports={},e=require("im-lib/lang/extend");return exports.name="img",exports.insert=function(t,i,n){var r=document.createElement("img");r.style.resize="none";var a=n.styles||{};e(r.style,a),r.src=i;for(var o in n)if(n.hasOwnProperty(o))r.setAttribute(o,n[o]);t.insertElements(r)},exports});

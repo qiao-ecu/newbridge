@@ -1,0 +1,1 @@
+define(function(){var e={},t={add:function(t){for(var n in t)if(t.hasOwnProperty(n)){var r=t[n];if("object"==typeof r)this.add(r);else e[n]=r}},isAllow:function(t){return!!e[t]}};return t});

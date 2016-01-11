@@ -1,0 +1,1 @@
+define(function(require){return{"package":"windowTipConfig",importConfig:[require("./notFound/enterConfig"),require("./windowTip/enterConfig"),require("./nativeAbility/bullConfig"),require("./common/util/bullConfig")]}});

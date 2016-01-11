@@ -1,0 +1,1 @@
+define(function(require){var exports={},e={};return exports.get=function(t){return e[t]},exports.set=function(t,n){e[t]=n},exports});

@@ -1,0 +1,1 @@
+define(function(require){var e=require("er/ajax"),t={constant:function(e){return function(){return e}},remote:function(t,n){return function(i){return n=require("er/util").mix({url:t,dataType:"json"},n),e.request(n)}}};return t});

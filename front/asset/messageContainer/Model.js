@@ -1,0 +1,1 @@
+define(function(require,exports,module){function e(){n.apply(this,arguments);var e=this.get("visitorId");if(e)this.datasource={messages:a(i.data("vm:chatroom","talking","talking",{bid:e}))}}var t=require("er/util"),n=require("ef/UIModel"),i=requireNode("client-vm")(),r=require("er/datasource"),a=r.constant;return t.inherits(e,n),e});

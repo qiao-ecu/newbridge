@@ -1,0 +1,1 @@
+define(function(require){return{"package":"workBench",resource:{Action:require("./Action"),Model:require("./Model"),View:require("./View"),tpl:require("tpl!./main.tpl")},injection:[{id:"workBench.Action",method:{constructor:["workBench.Model","workBench.View"]}},{id:"workBench.View",method:{enterDocument:["nativeAbility.main"]}}]}});

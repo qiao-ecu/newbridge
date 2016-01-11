@@ -1,0 +1,42 @@
+{
+    "status": 0,
+    "data": {
+        "dataList": [
+            {
+                "value": 0,
+                "text": "nbcps_liuhb5 aa",
+                "selected": true
+            },
+            {
+                "value": 3,
+                "text": "nbcps_liuhb5:q q",
+                "selected": true
+            },
+            {
+                "value": 42,
+                "text": "nbcps_liuhb5:sdfsfdsfs dsfdsfs",
+                "selected": true
+            },
+            {
+                "value": 43,
+                "text": "nbcps_liuhb5:tyfh gfhgfh",
+                "selected": true
+            },
+            {
+                "value": 44,
+                "text": "nbcps_liuhb5:fdgd fdgfdgd",
+                "selected": true
+            },
+            {
+                "value": 45,
+                "text": "nbcps_liuhb5:1 1111",
+                "selected": true
+            },
+            {
+                "value": 255,
+                "text": "nbcps_liuhb5:aaa111 aa",
+                "selected": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,130 @@
+.ui-table {
+    position: relative;
+    height: 100%;
+}
+
+.ui-table-head {
+    // border: 1px solid #cfebf6;
+    border-top: none;
+    border-bottom: none;
+    background: #e7f8fe;
+    box-sizing: border-box;
+    .ui-panel {
+        padding: 0 20px;
+        border: 1px solid #cfebf6;
+    }
+}
+
+.ui-table-hcell {
+    color: #727272;
+    background: none;
+    border: 1px solid transparent;
+}
+
+.ui-table-cell {
+    border: 1px solid transparent;
+    height: 38px;
+}
+
+.ui-table-hcell-text {
+    font-weight: 700;
+    padding: 0 5px;
+}
+
+.ui-table-body {
+    position: absolute;
+    top: 39px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid #d9e6eb;
+    border-top: 1px solid #cfebf6;
+    box-sizing: border-box;
+    a {
+        color: #00aef3;
+        text-decoration: none;
+    }
+
+    table {
+        border: none;
+    }
+
+    .ui-panel {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: auto;
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin-right: 5px;
+        padding: 0 15px 0 20px;
+        border-bottom: none;
+    }
+}
+
+.ui-table-row-hover {
+    background-color: #f0f4f6;
+}
+
+.ui-table-row-selected {
+    table {
+        background: #fff;
+    }
+}
+
+.edit {
+    background: url(img/pen.png) no-repeat;
+    display: inline-block;
+    width: 14px;
+    height: 18px;
+    padding-left: 8px;
+    padding-right: 4px;
+    background-position: 8px 2px;
+    line-height: 44px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.del {
+    background: url(img/del.png) no-repeat;
+    display: inline-block;
+    width: 14px;
+    height: 18px;
+    padding-left: 8px;
+    padding-right: 4px;
+    background-position: 8px 0px;
+    line-height: 44px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.ui-table-row-last {
+    border-bottom: 1px solid #ddd;
+}
+
+.ui-table-cell-text,
+.ui-table-body-nodata {
+    padding: 4px 5px;
+}
+
+.ui-table-body-nodata {
+    border: none;
+}
+
+/*.ui-table-cell-text-first,
+.ui-table-hcell-text-first {
+    padding: 8px 5px 4px 0;
+}*/
+
+.ui-table-cell-text,
+.ui-table-hcell-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    input[type="checkbox"] {
+        margin-top: 8px;
+    }
+}

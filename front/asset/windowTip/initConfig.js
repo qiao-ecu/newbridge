@@ -1,0 +1,1 @@
+define(function(require){return{"package":"initWindowTip",resource:{init:require("./init")},injection:[{id:"initWindowTip.init",method:{show:["nativeAbility.globalEmitter","nativeAbility.main"]}}],aspect:[{id:"initWindowTip.init",pointCut:["entry.main.init, init,"]}]}});

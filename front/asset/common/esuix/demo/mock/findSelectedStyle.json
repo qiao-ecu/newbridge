@@ -1,0 +1,153 @@
+{
+    "status": 0,
+    "data": {
+        "totalCount": 100,
+        "dataList": [
+            {
+                "value": 23,
+                "text": "PC11",
+                "selected": false
+            },
+            {
+                "value": 27,
+                "text": "PC12",
+                "selected": true
+            },
+            {
+                "value": 32,
+                "text": "PC1",
+                "selected": false
+            },
+            {
+                "value": 34,
+                "text": "PC1",
+                "selected": false
+            },
+            {
+                "value": 36,
+                "text": "PC1",
+                "selected": false
+            },
+            {
+                "value": 38,
+                "text": "PC1",
+                "selected": false
+            },
+            {
+                "value": 40,
+                "text": "PC1",
+                "selected": false
+            },
+            {
+                "value": 42,
+                "text": "PC1",
+                "selected": false
+            },
+            {
+                "value": 44,
+                "text": "PC1",
+                "selected": false
+            },
+            {
+                "value": 46,
+                "text": "PC1",
+                "selected": false
+            },
+            {
+                "value": 48,
+                "text": "PC1",
+                "selected": false
+            },
+            {
+                "value": 52,
+                "text": "PC1",
+                "selected": false
+            },
+            {
+                "value": 54,
+                "text": "PC1",
+                "selected": false
+            },
+            {
+                "value": 56,
+                "text": "PC1",
+                "selected": false
+            },
+            {
+                "value": 58,
+                "text": "PC1",
+                "selected": false
+            },
+            {
+                "value": 60,
+                "text": "PC1",
+                "selected": false
+            },
+            {
+                "value": 62,
+                "text": "PC1",
+                "selected": false
+            },
+            {
+                "value": 64,
+                "text": "PC1",
+                "selected": false
+            },
+            {
+                "value": 66,
+                "text": "PC1",
+                "selected": false
+            },
+            {
+                "value": 68,
+                "text": "PC1",
+                "selected": false
+            },
+            {
+                "value": 70,
+                "text": "PC1",
+                "selected": false
+            },
+            {
+                "value": 72,
+                "text": "PC1",
+                "selected": false
+            },
+            {
+                "value": 74,
+                "text": "PC1",
+                "selected": false
+            },
+            {
+                "value": 76,
+                "text": "PC1",
+                "selected": false
+            },
+            {
+                "value": 78,
+                "text": "PC1",
+                "selected": false
+            },
+            {
+                "value": 80,
+                "text": "PC1",
+                "selected": false
+            },
+            {
+                "value": 82,
+                "text": "PC1",
+                "selected": false
+            },
+            {
+                "value": 84,
+                "text": "PC1",
+                "selected": false
+            },
+            {
+                "value": 86,
+                "text": "PC1",
+                "selected": false
+            }
+        ]
+    }
+}

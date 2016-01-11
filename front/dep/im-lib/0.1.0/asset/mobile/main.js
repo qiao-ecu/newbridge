@@ -1,0 +1,1 @@
+define(function(require){return{lang:require("./lang"),json:require("./json"),net:require("./net"),util:require("./util"),Emitter:require("saber-emitter"),localStorage:require("./localStorage")}});

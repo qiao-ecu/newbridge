@@ -1,0 +1,1 @@
+define(function(require){return{"package":"login",resource:{Action:require("./Action"),Model:require("./Model"),View:require("./View"),tpl:require("tpl!./main.tpl")},injection:[{id:"login.Action",method:{constructor:["login.Model","login.View"]}},{id:"login.View",method:{enterDocument:["nativeAbility.globalEmitter"]}}]}});

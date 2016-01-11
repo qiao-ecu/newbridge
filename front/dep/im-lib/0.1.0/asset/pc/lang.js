@@ -1,0 +1,1 @@
+define(function(require){var exports={};return exports.isObject=require("./lang/isObject"),exports.isArray=require("./lang/isArray"),exports.extend=require("./lang/extend"),exports.each=require("./lang/each"),exports});

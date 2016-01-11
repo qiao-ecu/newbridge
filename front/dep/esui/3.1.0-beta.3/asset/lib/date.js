@@ -1,0 +1,1 @@
+define(function(require){var e=require("moment"),t={};return t.dateFormats=["YYYYMMDDHHmmss","YYYY-MM-DD HH:mm:ss","YYYY/MM/DD HH:mm:ss","YYYY-MM-DDTHH:mm:ss.SSSZ"],t.format=function(t,i){return e(t).format(i)},t.parse=function(i,n){var r=e(i,n||t.dateFormats);return r.toDate()},{date:t}});

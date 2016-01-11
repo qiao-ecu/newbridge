@@ -1,0 +1,1 @@
+define(function(require){var exports={};return exports.init=function(){var e=require("er/controller");e.registerAction({path:"/workBench",type:"workBench/entry"})},exports});

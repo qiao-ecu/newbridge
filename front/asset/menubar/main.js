@@ -1,0 +1,1 @@
+define(function(require){function e(){var e=new t.Menu({type:"menubar"});e.createMacBuiltin&&e.createMacBuiltin("新商桥",{hideWindow:!0}),n.menu=e}var exports={},t=requireNode("nw.gui"),n=t.Window.get();return exports.init=function(){e()},exports});

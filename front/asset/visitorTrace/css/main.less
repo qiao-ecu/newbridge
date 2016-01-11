@@ -1,0 +1,166 @@
+.vistor-trace-contain {
+  min-height: 40px;
+  height: auto;
+  min-width: 230px;
+  font-size: 12px;
+  margin-left: 35px;
+}
+
+.contain-traceEntry {
+  border: none;
+  height: auto;
+  min-height: 65px;
+  margin-top: 20px;
+}
+
+.traceEntry-contain {
+  height: auto;
+  margin-top: 20px;
+  min-width: 230px;
+  margin-left: -10px;
+}
+
+.vistor-trace-content {
+  height: auto;
+  display: inline-block;
+  padding-left: 30px;
+  border-left: none;
+  margin-left: 10px;
+}
+
+.trace-leave-text{
+  margin-top: 35px;
+  display: inline-block;
+  margin-left: -10px;
+  padding-left: 30px;
+  background: url(img/traceLeave.png) no-repeat 2px 4px;
+}
+
+.traceEntry-info a {
+  margin: 5px;
+}
+
+.traceEntry-img,
+.traceForward-img{
+  display: inline-block;
+  height: 13px;
+  width: 13px;
+  vertical-align: bottom;
+  margin: 0 10px 0 -37px;
+  background: url(img/traceEntry.png) no-repeat center;
+}
+
+.traceLeave-img{
+  display: inline-block;
+  height: 17px;
+  width: 17px;
+  background-image: url(img/traceLeave.png);
+}
+
+.stay {
+  color: #898989;
+}
+
+.startTime {
+  color: white;
+  background-color: #e0e0e0;
+  border-radius: 3px;
+  line-height: 30px;
+  padding: 5px;
+  margin: 0px;
+}
+
+.vistor-trace-startCon {
+  border: none;
+}
+
+.contain-stay {
+  height: 0;
+}
+
+.content-stay {
+  top: -37px;
+  left: 20px;
+}
+
+.content-startTime {
+  top: 9px;
+  padding-left: 0;
+  border: none;
+  margin-left: -5px;
+}
+
+.trace-forward-text,
+.vistor-trace-messageType {
+  display: inline-block;
+}
+
+.trace-forward-info {
+  margin-top: 10px;
+  min-width: 230px;
+  margin-left: -10px;
+}
+
+.trace-forward-stay {
+  margin-left: 20px;
+  position: relative;
+  top: 3px;
+  visibility: hidden;
+  color: #898989;
+}
+
+.trace-forward-text{
+  margin-left: 9px;
+  border-left: none;
+  padding-left: 30px;
+  padding-top: 1px;
+}
+
+.trace-entry-link{
+  margin: 0 5px;
+}
+
+.contain-traceEntry + .contain-traceForward, 
+.contain-traceForward + .contain-traceForward, 
+.contain-traceEntry + .contain-traceLeave, 
+.contain-traceForward + .contain-traceLeave{
+  border-left: 1px solid #d6d6d6;
+}
+
+.contain-traceForward + .vistor-trace-contain > .trace-forward-stay,
+.contain-traceEntry + .vistor-trace-contain > .trace-forward-stay,
+.contain-traceForward + .vistor-trace-contain > .trace-forward-stay {
+  visibility: visible;
+}
+
+.contain-traceLeave + .contain-traceForward .trace-forward-info{
+  background-position-y: 0px;
+  .trace-forward-text{
+    padding-left: 30px;
+    margin-left: 10px;
+  }
+} 
+
+.contain-traceForward + .vistor-trace-contain .trace-forward-info .trace-forward-text,
+.contain-traceEntry + .vistor-trace-contain .trace-forward-text
+.contain-traceLeave + .contain-traceForward .trace-forward-info .trace-forward-text{
+  border: none;
+}
+
+.content-startTime + .traceEntry-contain .vistor-trace-content .traceEntry-img,
+.contain-traceLeave + .contain-traceForward .trace-forward-info .trace-forward-text .traceEntry-img{
+  vertical-align: bottom;
+}
+
+.trace-forward-text span{
+  line-height: 13px;
+  vertical-align: bottom;;
+}
+
+.trace-left-line {
+  border-left: 1px solid #d6d6d6;
+}
+
+.vistor-trace-contain + .contain-traceEntry {
+  margin-top: 32px;
+}

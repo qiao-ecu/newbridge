@@ -1,0 +1,1 @@
+define(function(require){var exports={},e=null;return exports.createRuntimeAction=function(){var t=require("bull"),n=require("./actionConfig");t.init(n);var i=t.get("visitorList.Action");return e=new i},exports.getInstance=function(){return e},exports.selectVistor=function(t){e.select(t)},exports});

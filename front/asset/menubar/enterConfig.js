@@ -1,0 +1,1 @@
+define(function(require){return{"package":"enterMenubar",resource:{main:require("./main"),tray:require("./tray")},aspect:[{id:"enterMenubar.main",pointCut:["workBench.View.enterDocument,,init"]},{id:"enterMenubar.tray",pointCut:["enterMenubar.main.init,,create","enterNotify.main.changeUserStatus,,switchTray","enterNotify.message.notify,,trayFlash"]}]}});

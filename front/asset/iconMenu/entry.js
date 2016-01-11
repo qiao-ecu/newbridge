@@ -1,0 +1,1 @@
+define(function(require){var exports={},e=null;return exports.createRuntimeAction=function(){var t=require("bull"),n=require("./actionConfig");t.init(n);var i=t.get("IconMenu.Action");return e=new i},exports.getInstance=function(){return e},exports});

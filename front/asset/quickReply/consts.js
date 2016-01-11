@@ -1,0 +1,1 @@
+define(function(){var e=2,t=1;return{ROOT_ID:0,ALL:0,updateInterval:500,getTypeCode:function(n){switch(n){case"PC":return t;case"移动":return e}}}});

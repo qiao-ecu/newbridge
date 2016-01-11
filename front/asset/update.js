@@ -1,0 +1,1 @@
+!function(){var e=require;define(function(require){function t(){}var exports={},n=e("wgetjs"),i=process.execPath.replace(/[\w\.]+$/,"");return exports.update=function(){var e=i+"nw.pak2";n({url:"https://www.baidu.com/img/bd_logo1.png",dest:e},function(e){if(e)console.log(e);else t()})},exports})}();

@@ -1,0 +1,1 @@
+define(function(require){return{"package":"IconMenu",resource:{Action:require("./Action"),Model:require("./Model"),View:require("./View"),tpl:require("tpl!./main.tpl")},injection:[{id:"IconMenu.Action",method:{constructor:["IconMenu.Model","IconMenu.View"]}}]}});

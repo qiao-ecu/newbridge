@@ -1,0 +1,1 @@
+define("js",{load:function(e,t,n){function r(){var e=i.readyState;if("undefined"==typeof e||/^(loaded|complete)$/.test(e))i.onload=i.onreadystatechange=null,i=null,n(!0)}var i=document.createElement("script");if(i.src=t.toUrl(e),i.async=!0,i.readyState)i.onreadystatechange=r;else i.onload=r;var o=document.getElementsByTagName("head")[0]||document.body;o.appendChild(i),o=null}});

@@ -1,0 +1,1 @@
+define(function(require){return{"package":"enterVisitorInfo",resource:{main:require("./main")},aspect:[{id:"enterVisitorInfo.main",pointCut:["entry.main.init, init,"]}]}});

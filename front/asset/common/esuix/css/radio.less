@@ -1,0 +1,38 @@
+input[type="radio"] {
+    position: relative;
+    width: 12px;
+    height: 12px;
+}
+
+input[type="radio"]:before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: 0 0 0 -1px;
+    background: url(img/radio-bg.png) no-repeat 0 0;
+}
+
+input[type="radio"]:after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: -1px;
+    top: 0;
+    background: none;
+}
+
+input[type="radio"]:checked:after {
+    background: url(img/radio-bg.png) no-repeat 0 -16px;
+}
+
+input[type="radio"]:disabled:before {
+    background: url(img/radio-bg.png) no-repeat 0 -32px;
+}
+
+input[type="radio"]:disabled:checked:after {
+    background: url(img/radio-bg.png) no-repeat 0 -48px;
+}

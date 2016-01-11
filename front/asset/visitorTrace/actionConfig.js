@@ -1,0 +1,1 @@
+define(function(require){return{"package":"visitorTrace",resource:{Action:require("./Action"),Model:require("./Model"),View:require("./View"),tpl:require("tpl!./main.tpl")},injection:[{id:"visitorTrace.Action",method:{constructor:["visitorTrace.Model","visitorTrace.View"]}}]}});

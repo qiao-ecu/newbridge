@@ -1,0 +1,1 @@
+define(function(require,exports){exports.contextMenu={sendSelectedPhrase:"直接发送",editSelectedPhrase:"编辑后发送"},exports.errorTips={}});

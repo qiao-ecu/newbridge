@@ -1,0 +1,1 @@
+define(function(require){return{"package":"enterWindowTip",resource:{main:require("./main")},aspect:[{id:"enterWindowTip.main",pointCut:["entry.main.init, init,"]}]}});

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>控件demo</title>
+<link rel="stylesheet" href="../../../../dep/esui/3.1.0-beta.3/asset/css/main.css"/>
+<link rel="stylesheet" href="css/main.less"/>
+<script src="../../util/esl.js"></script>
+<script>
+require.config({
+        'baseUrl': '../../../../asset',
+        'paths': {},
+        'packages': [
+            {
+                'name': 'ef',
+                'location': '../dep/ef/3.1.0-beta.2/asset',
+                'main': 'main'
+            },
+            {
+                'name': 'eoo',
+                'location': '../dep/eoo/0.0.8/asset',
+                'main': 'oo'
+            },
+            {
+                'name': 'er',
+                'location': '../dep/er/3.1.0-beta.4/asset',
+                'main': 'main'
+            },
+            {
+                'name': 'esui',
+                'location': '../dep/esui/3.1.0-beta.3/asset',
+                'main': 'main'
+            },
+            {
+                'name': 'im-filter',
+                'location': '../dep/im-filter/0.1.0/asset',
+                'main': 'main'
+            },
+            {
+                'name': 'etpl',
+                'location': '../dep/etpl/2.1.2/asset',
+                'main': 'main'
+            },
+            {
+                'name': 'jquery',
+                'location': '../dep/jquery/1.9.1/asset',
+                'main': 'jquery.min'
+            },
+            {
+                'name': 'mini-event',
+                'location': '../dep/mini-event/1.0.0/asset',
+                'main': 'main'
+            },
+            {
+                'name': 'moment',
+                'location': '../dep/moment/2.7.0/asset',
+                'main': 'moment'
+            },
+            {
+                'name': 'underscore',
+                'location': '../dep/underscore/1.5.2/asset',
+                'main': 'underscore'
+            },
+            {
+                'name': 'common',
+                'location': './common'
+            }
+        ]
+    });
+</script>
+</head>
+
+<body>
+    <div id="main">
+    </div>
+    <script>
+        require(['common/esuix/demo/main'], function (main) {
+            main();
+        });
+    </script>
+</body>
+</html>

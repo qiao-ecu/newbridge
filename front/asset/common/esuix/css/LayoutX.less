@@ -1,0 +1,257 @@
+.ui-layout {
+    height: 100%;
+    width: 100%;
+}
+
+.ui-layout-row {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.ui-layout-column {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.ui-layout-item {
+    flex: 1;
+    // 修正flex布局没有height属性时内部元素height:100%无效的bug
+    position: relative;
+    transition: width 0.1s linear;
+    transition-property: width, height;
+    &>* {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.ui-layout-fold {
+    position: absolute;
+    z-index: 10;
+    transition: top 0.1s linear;
+    transition-property: left, right, top;
+}
+
+.ui-layout-fold-top {
+    top: 0;
+    left: 50%;
+    margin-left: -30px;
+    width: 60px;
+    height: 10px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background: url(img/esui-combo-arrow.png) no-repeat 22px -43px;
+    background-color: #ccc;
+}
+
+.ui-layout-fold-right {
+    top: 50%;
+    right: 0;
+    margin-top: -30px;
+    width: 10px;
+    height: 60px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background: url(img/esui-combo-arrow-h.png) no-repeat -25px 20px;
+    background-color: #ccc;
+}
+
+.ui-layout-fold-bottom {
+    bottom: 0;
+    left: 50%;
+    margin-left: -30px;
+    width: 60px;
+    height: 10px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background: url(img/esui-combo-arrow.png) no-repeat 22px -73px;
+    background-color: #ccc;
+}
+
+.ui-layout-fold-left {
+    top: 50%;
+    left: 0;
+    margin-top: -30px;
+    width: 10px;
+    height: 60px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background: url(img/esui-combo-arrow-h.png) no-repeat -7px 20px;
+    background-color: #ccc;
+}
+
+.ui-layout-fold-zip {
+    .ui-layout-fold-top {
+        top: -10px;
+        left: 50%;
+        margin-left: -30px;
+        width: 60px;
+        height: 10px;
+        border-radius: 0;
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+        background: url(img/esui-combo-arrow.png) no-repeat 22px -73px;
+        background-color: #ccc;
+    }
+
+    .ui-layout-fold-right {
+        top: 50%;
+        right: -10px;
+        margin-top: -30px;
+        width: 10px;
+        height: 60px;
+        border-radius: 0;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        background: url(img/esui-combo-arrow-h.png) no-repeat -7px 20px;
+        background-color: #ccc;
+    }
+
+    .ui-layout-fold-bottom {
+        bottom: -10px;
+        left: 50%;
+        margin-left: -30px;
+        width: 60px;
+        height: 10px;
+        border-radius: 0;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        background: url(img/esui-combo-arrow.png) no-repeat 22px -43px;
+        background-color: #ccc;
+    }
+
+    .ui-layout-fold-left {
+        top: 50%;
+        left: -10px;
+        margin-top: -30px;
+        width: 10px;
+        height: 60px;
+        border-radius: 0;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        background: url(img/esui-combo-arrow-h.png) no-repeat -25px 20px;
+        background-color: #ccc;
+    }
+}
+
+
+.ui-layout-fold-zip-left,
+.ui-layout-fold-zip-right {
+    // 此处无解，esui组件的宽度用style写的，用css就只好important，不然要用js搞
+    width: 0 !important;
+    // *是为了解决内部元素存在滚动条时
+    // 宽度为0滚动条依然显示
+    * {
+        overflow: hidden;
+    }
+}
+
+.ui-layout-fold-zip-top,
+.ui-layout-fold-zip-bottom {
+    height: 0 !important;
+    * {
+        overflow: hidden;
+    }
+}
+
+.ui-layout-drag {
+    position: absolute;
+    z-index: 10;
+    background-color: #ccc;
+    opacity: 0;
+}
+
+.ui-layout-drag-top {
+    width: 100%;
+    // 上面三像素，下面三像素，边框一像素
+    height: 7px;
+    top: -3px;
+    cursor: ns-resize;
+}
+
+.ui-layout-drag-right {
+    height: 100%;
+    width: 7px;
+    right: -3px;
+    cursor: ew-resize;
+}
+
+.ui-layout-drag-bottom {
+    width: 100%;
+    // 上面三像素，下面三像素，边框一像素
+    height: 7px;
+    bottom: -3px;
+    cursor: ns-resize;
+}
+
+.ui-layout-drag-left {
+    height: 100%;
+    width: 7px;
+    left: -3px;
+    cursor: ew-resize;
+}
+
+.ui-layout .layout-dragging {
+    transition: none;
+    -webkit-transition: none;
+}
+
+.mask-dragging {
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.ui-layout-mask-dragging-top {
+    cursor: ns-resize;
+}
+
+.ui-layout-mask-dragging-right {
+    cursor: ew-resize;
+}
+
+.ui-layout-mask-dragging-bottom {
+    cursor: ns-resize;
+}
+
+.ui-layout-mask-dragging-left {
+    cursor: ew-resize;
+}
+
+.dragging-top-min {
+    cursor: n-resize;
+}
+
+.dragging-top-max {
+    cursor: s-resize;
+}
+
+.dragging-bottom-min {
+    cursor: s-resize;
+}
+
+.dragging-bottom-max {
+    cursor: n-resize;
+}
+
+.dragging-left-min {
+    cursor: w-resize;
+}
+
+.dragging-left-max {
+    cursor: e-resize;
+}
+
+.dragging-right-min {
+    cursor: e-resize;
+}
+
+.dragging-right-max {
+    cursor: w-resize;
+}

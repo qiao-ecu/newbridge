@@ -1,0 +1,77 @@
+{
+	"status": 0,
+	"data": {
+		"dataList": [
+            {
+                "roleId": "1",
+                "roleName": "超级管理员",
+				"account":"aaa",
+                "resource": "所有权限",
+                "tag": 1
+            },
+			{
+                "roleId": "2",
+                "roleName": "客服经理",
+				"account":"aaa",
+                "resource": "所有权限",
+                "tag": 1
+            },
+			{
+                "roleId": "3",
+                "roleName": "普通客服",
+				"account":"aaa,bbb",
+                "resource": "接待权限,留言管理,名片管理",
+                "tag": 0
+            },
+			{
+                "roleId": "4",
+                "roleName": "销售客服组长",
+				"account":"aaabbbccc,abcdefg",
+                "resource": "接待权限,留言管理",
+                "tag": 0
+            },
+            {
+                "roleId": "2",
+                "roleName": "客服经理",
+                "account":"aaa",
+                "resource": "所有权限",
+                "tag": 1
+            },
+            {
+                "roleId": "3",
+                "roleName": "普通客服",
+                "account":"aaa,bbb",
+                "resource": "接待权限,留言管理,名片管理",
+                "tag": 0
+            },
+            {
+                "roleId": "4",
+                "roleName": "销售客服组长",
+                "account":"aaa,bbb",
+                "resource": "接待权限,留言管理",
+                "tag": 0
+            },
+            {
+                "roleId": "2",
+                "roleName": "客服经理",
+                "account":"aaa",
+                "resource": "所有权限",
+                "tag": 1
+            },
+            {
+                "roleId": "3",
+                "roleName": "普通客服",
+                "account":"aaa,bbb",
+                "resource": "接待权限,留言管理,名片管理",
+                "tag": 0
+            },
+            {
+                "roleId": "4",
+                "roleName": "销售客服组长",
+                "account":"aaa,bbb",
+                "resource": "接待权限,留言管理",
+                "tag": 0
+            }
+        ]
+	}
+}

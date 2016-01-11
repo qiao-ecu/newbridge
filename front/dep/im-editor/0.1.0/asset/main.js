@@ -1,0 +1,1 @@
+define(function(require){var e=require("./Editor");return function(t){return new e(t)}});

@@ -1,0 +1,1 @@
+define(function(require){function e(e,t){this.modelType=e,this.viewType=t,n.apply(this,arguments)}var t=require("er/util"),n=require("er/Action");return t.inherits(e,n),e});

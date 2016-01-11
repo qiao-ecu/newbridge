@@ -1,0 +1,1 @@
+define(function(require){return{"package":"enterMessageContainer",resource:{main:require("./main")},aspect:[{id:"enterMessageContainer.main",pointCut:["entry.main.init, init,"]}]}});

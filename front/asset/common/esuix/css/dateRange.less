@@ -1,0 +1,39 @@
+/**
+  * ESUI (Enterprise Simple UI)
+  * Copyright 2013 Baidu Inc. All rights reserved.
+  *
+  * @file 通用提示用漂浮层
+  * @author zhangzhiqiang<zhangzhiqiang04@baidu.com>
+  */
+ @import "mixin.less";
+.ui-daterange {
+  //border: 1px solid #d5d5d5;
+  display: inline-block;
+  .border-radius(3px);
+  background: #fff;
+
+  .current-tab {
+    background: #00aef3;
+    color: #fff;
+    border: 1px solid #00aef3;
+
+    &:last-child {
+      border-right: 1px solid #00aef3;
+    }
+  } 
+}
+.ui-range {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  padding: 0 14px;
+  font-size: 12px;
+  border: 1px solid #d5d5d5;
+  border-right: 1px solid transparent;
+  display: inline-block;
+  cursor: pointer;
+
+  &:last-child {
+    border-right: 1px solid #d5d5d5;
+  }
+}

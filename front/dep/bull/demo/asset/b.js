@@ -1,0 +1,1 @@
+define(function(require){function e(){}return e.prototype={constructor:e,sayHello:function(){alert("sayHelloB")}},e});

@@ -1,0 +1,1 @@
+define(function(require){var e=require("./Functor"),t=require("./Monad"),n=require("./Either"),i=require("./util");return{Functor:e,Monad:t,Either:n,util:i}});

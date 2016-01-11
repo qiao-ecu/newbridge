@@ -1,0 +1,1 @@
+define(function(require,exports,module){function e(){t.apply(this,arguments)}var t=require("ef/UIModel"),n=require("er/util");return e.prototype.prepare=function(){t.prototype.prepare.call(this,arguments)},n.inherits(e,t),e});

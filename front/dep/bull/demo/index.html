@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>bull框架测试</title>
+    <script src="http://s1.bdstatic.com/r/www/cache/ecom/esl/1-8-2/esl.js"></script>
+    <script>
+        require.config({
+        'baseUrl': 'asset',
+        'packages': [{
+                'name': 'bull',
+                'location': '../../asset/',
+                'main': 'main'
+            }]
+    });
+    </script>
+</head>
+
+<body>
+    <div id="main">
+    </div>
+    <script>
+        require(['bull', 'importConfig'], function (bull, config) {
+            bull.init(config);
+            bull.get('test.main').init(1);
+            bull.queryAfter('test.a', 'sayHello');
+            bull.queryBefore('test.a', 'sayHello');
+            bull.queryDep('test.aspectTest');
+            bull.checkDep();
+            bull.queryInvoke('test.c');
+        });
+    </script>
+</body>
+</html>

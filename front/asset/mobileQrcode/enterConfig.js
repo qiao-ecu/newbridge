@@ -1,0 +1,1 @@
+define(function(require){return{"package":"enterMobileQrcode",resource:{main:require("./main")},aspect:[{id:"enterMobileQrcode.main",pointCut:["entry.main.init, init,"]}]}});

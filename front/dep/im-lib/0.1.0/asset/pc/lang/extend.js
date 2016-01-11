@@ -1,0 +1,1 @@
+define(function(){return function(e,t){for(var i in t)if(t.hasOwnProperty(i))e[i]=t[i];return e}});

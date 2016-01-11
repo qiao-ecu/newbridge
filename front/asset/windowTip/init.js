@@ -1,0 +1,1 @@
+define(function(require){var exports={},e="windowId"+parseInt(1e3*Math.random(),10);return exports.init=function(){},exports.open=function(){},exports.show=function(t,n,i,r,a){i=i||"/",a=a||{};var o=r.getBoundingClientRect(),s=n.getPosition();t.emit(e,{type:"show",x:o.left+s.x,y:o.top+s.y,action:i,param:a})},exports.hide=function(){globalEmitter.emit(e,{type:"hide"})},exports});

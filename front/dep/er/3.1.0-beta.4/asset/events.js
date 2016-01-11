@@ -1,0 +1,1 @@
+define(function(require){function e(){}var t=require("./util");t.inherits(e,require("mini-event/EventTarget")),e.prototype.notifyError=function(e){if("string"==typeof e)e=new Error(e);return this.fire("error",{error:e}),e};var n=new e;return n.EventBus=e,n});

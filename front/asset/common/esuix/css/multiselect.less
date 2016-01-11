@@ -1,0 +1,80 @@
+.ui-multiselect {
+    width: 170px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    border: 1px solid #d5d5d5;
+    padding: 0 20px 0 10px;
+    background: url(img/esui-combo-arrow.png) no-repeat scroll right -2px #fff;
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.ui-multiselect-layer-hidden {
+    display: none;
+}
+
+.ui-multiselectlist {
+    display: block;
+    padding: 0 5px 0 10px;
+    border: 1px solid #d5d5d5;
+    margin-top: -1px;
+    background: #fff;
+    font-size: 12px;
+
+    li {
+        height: 30px;
+        line-height: 30px;
+        border-bottom: 1px solid #e7ecee;
+        color: #8a8c8d;
+
+        &:hover{
+            color: #000;
+        }
+
+        label {
+            cursor: pointer;
+        }
+    }
+
+    .select-all-row {
+        height: 30px;
+        line-height: 30px;
+        border-bottom: 1px solid #e7ecee;
+        margin-right: 10px;
+        color: #8a8c8d;
+
+        &:hover{
+            color: #000;
+        }
+
+        label {
+            cursor: pointer;
+        }
+    }
+
+    ul {
+        max-height: 180px;
+        padding-right: 5px;
+        overflow-y: auto;
+    }
+
+    label {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 300px;
+
+        span {
+            padding-left: 7px;
+        }
+    }
+
+    li:nth-last-of-type(1){
+        border-bottom: none;
+    }
+}
+

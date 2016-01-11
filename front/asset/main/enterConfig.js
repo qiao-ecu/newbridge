@@ -1,0 +1,1 @@
+define(function(require){return{"package":"enterMain",resource:{main:require("./main")},aspect:[{id:"enterMain.main",pointCut:["entry.main.init, init,"]}]}});

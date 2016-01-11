@@ -1,0 +1,45 @@
+input[type="checkbox"] {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    margin: 1px;
+}
+
+input[type="checkbox"]:before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: -1px 0 0 -1px;
+    background: url(img/checkbox-bg.png) no-repeat 0 0;
+}
+
+input[type="checkbox"]:after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: -1px;
+    top: -1px;
+    background: none;
+}
+
+input[type="checkbox"]:checked:after {
+    background: url(img/checkbox-bg.png) no-repeat 0 -16px;
+}
+
+input[type="checkbox"]:disabled:before {
+    background: url(img/checkbox-bg.png) no-repeat 0 -32px;
+}
+
+input[type="checkbox"]:disabled:checked:after {
+    background: url(img/checkbox-bg.png) no-repeat 0 -48px;
+}
+
+.ui-checkbox {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}

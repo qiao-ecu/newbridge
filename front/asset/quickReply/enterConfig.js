@@ -1,0 +1,1 @@
+define(function(require){return{"package":"enterQuickReply",resource:{main:require("./main")},aspect:[{id:"enterQuickReply.main",pointCut:["entry.main.init, init,"]}]}});

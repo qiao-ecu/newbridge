@@ -1,0 +1,18 @@
+/**
+ * ESUI (Enterprise Simple UI)
+ * Copyright 2013 Baidu Inc. All rights reserved.
+ * 
+ * @file 面包屑样式
+ * @author dbear, otakustay
+ */
+.ui-crumb {
+  overflow: hidden;
+}
+.ui-crumb-node,
+.ui-crumb-separator {
+  padding: 0;
+  float: left;
+}
+.ui-crumb-separator {
+  margin: 0 5px;
+}

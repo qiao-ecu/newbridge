@@ -1,0 +1,1 @@
+define(function(require){var exports={};return exports.sayHello=function(){alert("sayHelloA")},exports});

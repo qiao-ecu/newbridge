@@ -1,0 +1,79 @@
+//聊天部分
+.chat-message-container {
+    font-size: 12px;
+    color: #4f4f4f;
+    clear: both;
+}
+
+.chat-message {
+    .chat-person {
+        margin-right: 8px;
+    }
+    .chat-time {
+        margin-right: 8px;
+    }
+    .chat-message-fail {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        // background: url('img/fail.png') no-repeat;
+        border-radius: 6px;
+        background-color: red;
+        text-indent: 4px;
+        margin-bottom: -12px;
+        color: #fff;
+    }
+}
+
+.chat-visitor {
+    .chat-person {
+        color: #f39800;
+    }
+
+    .voice-message-content {
+        background-color: #b2e9fe;
+    }
+    .chat-message-title {
+        color: #f39800;
+    }
+}
+
+.chat-service {
+    .chat-person {
+        color: #00aef3;
+    }
+    .chat-message-title {
+        color: #00aef3;
+    }
+    .chat-message-content {
+        color: #777;
+    }
+}
+
+.chat-message-title {
+    line-height: 12px;
+}
+
+.chat-message-content {
+    word-break: break-all;
+    padding: 6px 5px 12px 24px;
+}
+
+//系统消息部分
+.system-message-container {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.system-message {
+    .border-radius(3px);
+    background-color: #e0e0e0;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 12px;
+    // margin: 28px auto;
+    margin: 12px;
+    padding: 4px 12px;
+}
+

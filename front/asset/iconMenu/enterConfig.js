@@ -1,0 +1,1 @@
+define(function(require){return{"package":"enterIconMenu",resource:{main:require("./main")},aspect:[{id:"enterIconMenu.main",pointCut:["entry.main.init, init,"]}]}});

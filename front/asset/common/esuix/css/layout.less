@@ -1,0 +1,32 @@
+// 自适应高度布局，将这个类添加到html上
+.fit-height {
+    height: 100%;
+    body {
+        height: 100%;
+        position: relative;
+    }
+}
+// 自适应高度布局，将这个类添加到需要适应屏幕高度的容器上
+.fit-container {
+    position: absolute;
+    top: 0;// 请覆盖top，为容器上部元素留出空间
+    bottom:0;
+    left:0;
+    right:0;
+    overflow: auto;
+}
+
+.layout-middle-super {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.layout-middle-child {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.block-center {
+    margin: auto;
+}

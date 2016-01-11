@@ -1,0 +1,1 @@
+define(function(require){return{"package":"enterWorkBench",resource:{main:require("./main")},aspect:[{id:"enterWorkBench.main",pointCut:["entry.main.init, init,"]}]}});

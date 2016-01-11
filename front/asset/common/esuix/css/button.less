@@ -1,0 +1,81 @@
+@import "mixin.less";
+.skin-ok-button,
+.skin-circle-button {
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    padding: 0 20px;
+    background: #00aef3;
+    border: 1px solid #00aef3;
+    .border-radius(3px);
+
+    &:hover {
+        background: #00aef3;
+    }
+    &:active {
+        background: #0099e0;
+        border-top: 1px solid #017eb8;
+    }
+}
+
+.skin-circle-button {
+    background: none;
+    color: #00aef3;
+
+    &:hover,
+    &:active {
+        color: #fff;
+    }
+}
+
+.skin-ok-button.ui-button-disabled,
+.skin-ok-button.ui-button-disabled:hover,
+.skin-ok-button.ui-button-disabled:active {
+    background: #d5d5d5;
+    border: 1px solid #d5d5d5;
+}
+
+.skin-circle-button.ui-button-disabled,
+.skin-circle-button.ui-button-disabled:hover,
+.skin-circle-button.ui-button-disabled:active {
+    color: #c8c8c8;
+    background: none;
+    border: 1px solid #cfcfcf;
+}
+
+.skin-new-button,
+.skin-new-button:hover,
+.skin-new-button:active {
+    background-image: url(img/plus.png);
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    padding: 0 10px 0 28px;
+}
+
+.ui-button-thead {
+    height: 30px;
+    line-height: 30px;
+    color: #727272;
+    padding: 0 20px;
+    background: -webkit-linear-gradient(top,#fff,#f5f3f4);
+    border: 1px solid #a5d6e9;
+    .border-radius(3px);
+
+    &:hover {
+        background: -webkit-linear-gradient(top,#f5f3f4,#fff);
+    }
+    &:active {
+        background: #eeeded;
+    border: 1px solid #a5d6e9;
+    }
+
+}
+
+.ui-button-disabled,
+.ui-button-disabled:hover,
+.ui-button-disabled:active {
+    background: none;
+    cursor: default;
+    color: #727272;
+}
+

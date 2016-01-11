@@ -1,0 +1,71 @@
+@import "mixin.less";
+.ui-selectlist,
+.ui-selectlist:hover,
+.ui-selectlist:focus,
+.ui-selectlist-active:focus {
+    width: 170px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    border: 1px solid #d5d5d5;
+    background: url(img/esui-combo-arrow.png) no-repeat scroll right -2px #fff;
+    padding: 0 20px 0 10px;
+    .border-radius(0);
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.select-list-content {
+    background: #fff;
+    padding: 0 5px 0 10px;
+    border: 1px solid #d5d5d5;
+    ol {
+        max-height: 180px;
+        padding-right: 5px;
+        overflow: auto;
+
+        li:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
+.ui-selectlist-layer {
+    padding: 0;
+    margin-top: -1px;
+}
+
+.ui-selectlist-item {
+    color: #8a8c8d;
+    line-height: 30px;
+    margin: 0;
+    border-bottom: 1px solid #e7ecee;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:hover{
+        color: #000;
+    }
+}
+
+.ui-selectlist-item-selected {
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid #e7ecee;
+}
+
+.ui-selectlist-layer-hidden {
+    display: none;;
+}
+
+.ui-selectlist-disabled {
+    color: #bababa;
+}
+
+.ui-selectlist-layer {
+    font-size: 12px;
+}

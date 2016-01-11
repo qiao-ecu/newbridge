@@ -1,0 +1,1 @@
+define("css",{load:function(e,t,n){var r=document.createElement("link");r.setAttribute("rel","stylesheet"),r.setAttribute("type","text/css"),r.setAttribute("href",t.toUrl(e));var i=document.getElementsByTagName("head")[0]||document.body;i.appendChild(r),i=null,r=null,n(!0)}});

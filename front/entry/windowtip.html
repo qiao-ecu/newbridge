@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+        </title>
+        <link rel="stylesheet" type="text/css" href="../asset/css/main.css"/>
+        <script src="../dep/esl/esl-2-0-6.js"></script>
+        <script>
+            esl.config({
+                'baseUrl': '../src',
+                'packages': [
+                    {
+                        'name': 'bull',
+                        'location': '../dep/bull/src',
+                        'main': 'main'
+                    },
+                    {
+                        'name': 'ef',
+                        'location': '../dep/ef/3.1.0-beta.2/src',
+                        'main': 'main'
+                    },
+                    {
+                        'name': 'eoo',
+                        'location': '../dep/eoo/0.0.8/src',
+                        'main': 'oo'
+                    },
+                    {
+                        'name': 'er',
+                        'location': '../dep/er/3.1.0-beta.4/src',
+                        'main': 'main'
+                    },
+                    {
+                        'name': 'esui',
+                        'location': '../dep/esui/3.1.0-beta.3/src',
+                        'main': 'main'
+                    },
+                    {
+                        'name': 'etpl',
+                        'location': '../dep/etpl/2.1.2/src',
+                        'main': 'main'
+                    },
+                    {
+                        'name': 'tpl',
+                        'location': './common/util',
+                        'main': 'tpl'
+                    },
+                    {
+                        'name': 'jquery',
+                        'location': '../dep/jquery/1.9.1/src',
+                        'main': 'jquery.min'
+                    },
+                    {
+                        'name': 'mini-event',
+                        'location': '../dep/mini-event/1.0.0/src',
+                        'main': 'main'
+                    },
+                    {
+                        'name': 'moment',
+                        'location': '../dep/moment/2.7.0/src',
+                        'main': 'moment'
+                    },
+                    {
+                        'name': 'underscore',
+                        'location': '../dep/underscore/1.5.2/src',
+                        'main': 'underscore'
+                    },
+                    {
+                        'name': 'common',
+                        'location': './common'
+                    }
+                ]
+            });
+        </script>
+    </head>
+    <body>
+        <div id="main">
+        </div>
+        <script>
+            esl(['windowTip/main', 'bull', 'windowTipConfig'], function (windowTip, bull, windowTipConfig) {
+                    bull.init(windowTipConfig);
+                    windowTip.init();
+                }
+            );
+        </script>
+    </body>
+</html>

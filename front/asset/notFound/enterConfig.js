@@ -1,0 +1,1 @@
+define(function(require){return{"package":"enterNotFound",resource:{main:require("./main")},aspect:[{id:"enterNotFound.main",pointCut:["entry.main.init, init,","enterWindowTip.main.init, init,"]}]}});

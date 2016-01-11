@@ -1,0 +1,357 @@
+@import "./mixin.less";
+
+@searchBoxContainerHeight: -2px;
+@typeTabHeight: 32px;
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    // overflow-y: hidden;
+}
+
+html {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+::-webkit-input-placeholder {
+    color: #727272;
+    opacity: 1;
+    font-family: 'Microsoft Yahei';
+    font-size: 12px;
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#main {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.ui-select {
+    width: auto;
+}
+
+.reply-list {
+    top: 90px;
+}
+
+div[data-level="0"] > .folder-node {
+    display: none;
+}
+
+.ui-tree-node {
+    cursor: default;
+    line-height: 24px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.ui-tree-content-wrapper {
+    border-left: none;
+    padding-left: 8px;
+    margin: 1px;
+    border-radius: 4px;
+    &:hover {
+        background-color: #c1e8f8;
+    }
+}
+
+.ui-tree-node-indicator {
+    background-image: url(img/arrowRight.png);
+    margin: 8px 0 0 5px;
+}
+
+.ui-tree-content-wrapper-selected {
+    background-color: #01acf4 !important;
+    color: #fff;
+    border-radius: 4px;
+    div[data-type="1"]::before {
+        color: #fff;
+    }
+
+    // 通用常用语样式
+    div[data-apped="2"] {
+        background: url("img/general-white.png") no-repeat 99.5% center;
+    }
+}
+.ui-tree-node-indicator-expanded {
+    background-image: url(img/arrowDown.png);
+    margin: 10px 2px 0 3px;
+}
+.ui-tree-node-indicator-empty,
+.ui-tree-node-indicator-previous,
+.ui-tree-node-indicator-far-previous {
+    display: none;
+    background-image: none;
+}
+
+.ui-tree-node-indicator-level-0 {
+    width: 0;
+}
+
+.leaf-node {
+    .ui-tree-item-content {
+        position: relative;
+        margin-left: -6px;
+    }
+}
+
+.folder-node {
+    font-weight: bold;
+    background-color: #f0f0f0;
+    overflow: hidden;
+
+    &:hover {
+        background-color: #f0f0f0;
+    }
+
+    .ui-tree-item-content {
+        color: #4f4f4f;
+    }
+}
+
+div[data-apped="2"] {
+    background: url("img/general.png") no-repeat 99.5% center;
+}
+
+div.item {
+    padding: 0 20px 0 0;
+}
+
+div[data-type="1"] {
+    position: relative;
+    &::before {
+        position: absolute;
+        top: -15px;
+        left: -1px;
+        content: ".";
+        font-size: 45px;
+        color:  #c5c5c5;
+    }
+}
+
+.ui-tree-node-level-1 {
+    div[data-type="1"] {
+        padding-left: 23px;
+        &::before {
+            left: 8px;
+        }
+    }
+}
+
+.ui-tree-node-level-2 {
+    div[data-type="1"] {
+        padding-left: 16px;
+        &::before {
+            left: -1px;
+        }
+    }
+
+    .leaf-node {
+        padding-left: 0 !important;
+        .ui-tree-item-content {
+            margin-left: 12px;
+        }
+    }
+
+    .folder-node {
+        background-color: #fff;
+    }
+
+    .ui-tree-content-wrapper {
+        padding-left: 8px;
+    }
+}
+
+.ui-tree-node-level-3 {
+    .leaf-node {
+        padding-left: 12px !important;
+    }
+}
+
+.searchBoxContainer {
+    .clear-float();
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    border: 1px solid #c6ced1;
+    z-index: 1;
+
+    .search-icon-container {
+        position: absolute;
+        top: 0;
+        right: -2px;
+        width: 32px;
+        height: 32px;
+        border-left: 1px solid #c6ced1;
+        border-right: 1px solid #c6ced1;
+        background: -webkit-linear-gradient(90deg, #f3f4f4 0%, #ffffff 100%);
+        background: linear-gradient(0deg, #f3f4f4 0%, #ffffff 100%);
+
+        .search-icon {
+            height: 100%;
+            width: 100%;
+            background: url(img/magnifier.png) no-repeat center;
+        }
+    }
+}
+
+#searchBox {
+    padding-left: 5px;
+    width: 100%;
+    // 有2px的border
+    height: @searchBoxContainerHeight;
+    border: 0;
+    outline: 0;
+}
+
+#cancel {
+    display: none;
+    position: absolute;
+    background: url(img/cancel-button.png) no-repeat;
+    width: 17px;
+    height: 17px;
+    right: 40px;
+    bottom: 8px;
+}
+
+.ui-tab-horizontal {
+    .ui-tab-item {
+        padding: 0;
+
+        span {
+            display: block;
+            // 有2px的border
+            height: 30px;
+            line-height: 30px;
+            font-size: 12px;
+        }
+    }
+}
+
+.ui-tab-navigator {
+    width: 100%;
+    padding-left: 0 !important;
+    border-bottom: 0;
+
+    li.ui-tab-item {
+        width:50%;
+        margin-right: 0;
+        border: 1px solid #c6ced1;
+        background-color: #fafdff;
+
+        &:first-child {
+            border-right: 0 !important;
+        }
+    }
+
+    .ui-tab-item-active {
+        background-color: #fff !important;
+        border-bottom: 0 !important;
+    }
+}
+.ui-tab-horizontal .ui-tab-navigator {
+    border-bottom: 0;
+}
+
+.ui-tree-node-indicator {
+    text-indent: -1000px;
+}
+
+#type-PC {
+    border-left: 1px solid #c6ced1;
+    border-right: 1px solid #c6ced1;
+}
+
+.ui-verticaltiplayer {
+    max-width: 200px !important;
+    padding: 5px 8px;
+    min-width: 0;
+}
+
+.ui-verticaltiplayer-body {
+    max-width: 165px;
+    max-height: none;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+div[data-ctrl-id="resultList"] {
+    div[data-apped="0"] {
+        background: url("img/pcOnly.png") no-repeat 99.5% center;
+    }
+    div[data-apped="1"] {
+        background: url("img/mobileOnly.png") no-repeat 99.5% center;
+    }
+
+    .ui-tree-content-wrapper-selected {
+        div[data-apped="0"] {
+            background: url("img/pc-white.png") no-repeat 99.5% center;
+        }
+        div[data-apped="1"] {
+            background: url("img/mobile-white.png") no-repeat 99.5% center;
+        }
+    }
+}
+
+#display-tree,
+#search-tree {
+    box-sizing: border-box;
+    overflow-y: auto;
+    max-height: 100%;
+    // 2px是搜索容器的border
+    // 这里选择boder，因为padding滚动条有问题
+    z-index: 1;
+}
+
+#display-tree {
+    // 2px是搜索容器的border
+    // 这里选择boder，因为padding滚动条有问题
+    border-top: @searchBoxContainerHeight + 2 + @typeTabHeight solid #fff;
+}
+
+#search-tree {
+    // 默认搜索结果树是不显示的
+    display: none;
+    // 2px是搜索容器的border, 5px是留个补白
+    // 这里选择boder，因为padding滚动条有问题
+    border-top: @searchBoxContainerHeight + 2 + 5 solid #fff;
+}
+
+#type-tab {
+    position: absolute;
+    // 2px是border
+    top: @searchBoxContainerHeight + 2;
+    height: @typeTabHeight;
+    z-index: 2;
+    width: 100%;
+}
+
+.skin-quick-reply-dialog-body-panel {
+    padding: 0;
+    position: absolute;
+    overflow: auto;
+    top: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.skin-quick-reply-tab {
+    overflow: hidden;
+    .skin-quick-reply-tab-navigator {
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        right: -1px;
+        width: auto;
+    }
+}
+

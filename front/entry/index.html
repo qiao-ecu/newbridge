@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>百度商桥</title>
+        <link rel="stylesheet" type="text/css" href="../asset/css/main.css"/>
+        <script src="../dep/esl/asset/esl.js"></script>
+        <script>
+            // 为什么要写一个闭包？ 
+            // 为什么要把esl赋值给require？
+            // 为什么不用esl.config？
+            // 因为编译时只检测require.config，然后替换内部的src为asset
+            // 所以一定要写require.config，那就只好var require = esl
+            // 因为全局的require是node的
+            // 没有闭包就把node的require覆盖了，全挂了，我容易么我
+            (function () {
+                var require = esl;
+                require.config({
+        'baseUrl': '../asset',
+        'packages': [
+            {
+                'name': 'bull',
+                'location': '../dep/bull/asset',
+                'main': 'main'
+            },
+            {
+                'name': 'eff',
+                'location': '../dep/eff/asset',
+                'main': 'main'
+            },
+            {
+                'name': 'echarts',
+                'location': '../dep/echarts/2.2.1/asset',
+                'main': 'echarts'
+            },
+            {
+                'name': 'zrender',
+                'location': '../dep/zrender/2.0.8/asset',
+                'main': 'zrender'
+            },
+            {
+                'name': 'ef',
+                'location': '../dep/ef/3.1.0-beta.2/asset',
+                'main': 'main'
+            },
+            {
+                'name': 'eoo',
+                'location': '../dep/eoo/0.0.8/asset',
+                'main': 'oo'
+            },
+            {
+                'name': 'er',
+                'location': '../dep/er/3.1.0-beta.4/asset',
+                'main': 'main'
+            },
+            {
+                'name': 'esui',
+                'location': '../dep/esui/3.1.0-beta.3/asset',
+                'main': 'main'
+            },
+            {
+                'name': 'etpl',
+                'location': '../dep/etpl/2.1.2/asset',
+                'main': 'main'
+            },
+            {
+                'name': 'im-editor',
+                'location': '../dep/im-editor/0.1.0/asset',
+                'main': 'main'
+            },
+            {
+                'name': 'im-lib',
+                'location': '../dep/im-lib/0.1.0/asset/pc',
+                'main': 'main'
+            },
+            {
+                'name': 'im-filter',
+                'location': '../dep/im-filter/0.1.0/asset',
+                'main': 'main'
+            },
+            {
+                'name': 'tpl',
+                'location': './common/util',
+                'main': 'tpl'
+            },
+            {
+                'name': 'jquery',
+                'location': '../dep/jquery/1.9.1/asset',
+                'main': 'jquery.min'
+            },
+            {
+                'name': 'mini-event',
+                'location': '../dep/mini-event/1.0.0/asset',
+                'main': 'main'
+            },
+            {
+                'name': 'moment',
+                'location': '../dep/moment/2.7.0/asset',
+                'main': 'moment'
+            },
+            {
+                'name': 'underscore',
+                'location': '../dep/underscore/1.5.2/asset',
+                'main': 'underscore'
+            },
+            {
+                'name': 'common',
+                'location': './common'
+            }
+        ]
+    });
+            })();
+        </script>
+    </head>
+    <body>
+        <div id="main">
+        </div>
+        <script>
+
+            var localStorage = window.localStorage;
+            if (localStorage) {
+                window.__bullDebug = localStorage.getItem('bullDebug');
+            }
+
+            var flag = 0;
+            function pageInit() {
+                flag++;
+                esl(['main', 'bull', 'bullConfig'], function (main, bull, bullConfig) {
+                    bull.init(bullConfig);
+                    main.init();
+                });
+            }
+
+            esl(['updater/main'], function (updater) {
+                // 防止升级报错导致程序无法运行，3秒超时后自动运行
+                setTimeout(function () {
+                    if (!flag) {
+                        console.log('升级超时');
+                        pageInit();
+                    }
+                }, 3000);
+                updater.init(pageInit);
+            });
+        </script>
+    </body>
+</html>

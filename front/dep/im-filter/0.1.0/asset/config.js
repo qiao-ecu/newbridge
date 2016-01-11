@@ -1,0 +1,1 @@
+define(function(require){return{"package":"imfilter",resource:{main:require("./main")}}});

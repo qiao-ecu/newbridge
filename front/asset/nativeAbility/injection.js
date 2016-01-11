@@ -1,0 +1,1 @@
+define(function(require){function e(e){if(e)e.contentWindow.requireNode=require;else window.requireNode=require}var t=window.require,n=t("nw.gui"),i=n.Window.get();i.on("document-start",e)});

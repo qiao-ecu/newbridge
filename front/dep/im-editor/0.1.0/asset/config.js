@@ -1,0 +1,1 @@
+define(function(require){return{"package":"imEditor",resource:{main:require("./main")}}});

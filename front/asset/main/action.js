@@ -1,0 +1,1 @@
+define(function(require){function e(e,t){this.modelType=e,this.viewType=t,n.apply(this,arguments)}var t=require("er/util"),n=require("er/Action");return window.addEventListener("unload",function(){traceLogger.trace("unload"),process.exit()},!1),t.inherits(e,n),e});

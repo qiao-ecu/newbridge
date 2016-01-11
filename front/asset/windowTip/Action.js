@@ -1,0 +1,1 @@
+define(function(require){function e(e,t){this.modelType=e,this.viewType=t,n.apply(this,arguments)}var t=require("er/util"),n=require("er/Action");return e.prototype.initBehavior=function(e){var t=this,n=this.model.get("windowId");e.on(n,function(e){switch(e.type){case"show":t.view.showWindowWithAction(e)}})},t.inherits(e,n),e});

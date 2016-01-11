@@ -1,0 +1,1 @@
+define(function(require){return{"package":"imLib",resource:{lang:require("./lang"),json:require("./json"),net:require("./net"),util:require("./util"),Emitter:require("./Emitter"),localStorage:require("./localStorage")}}});

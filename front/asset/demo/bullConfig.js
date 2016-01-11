@@ -1,0 +1,1 @@
+define(function(require){return{"package":"demo",resource:{crypto:require("./crypto")}}});

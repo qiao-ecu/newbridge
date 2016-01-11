@@ -1,0 +1,1 @@
+define(function(){var exports={};return exports.parse=function(e){return JSON.parse(e)},exports.stringify=function(e){return JSON.stringify(e)},exports});

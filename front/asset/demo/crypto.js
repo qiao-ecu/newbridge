@@ -1,0 +1,1 @@
+define(function(require){var e=window.require,t=e("crypto"),n=t.createCipher("des","1234567890"),i=n.update("hello world","utf-8","base64");i+=n["final"]("base64"),console.log(i);var r=t.createDecipher("des","1234567890"),a=r.update(i,"base64","utf-8");a+=r["final"]("utf-8"),console.log(a)});

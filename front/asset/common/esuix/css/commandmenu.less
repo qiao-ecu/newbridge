@@ -1,0 +1,92 @@
+@import "mixin.less";
+.ui-commandmenu {
+    width: auto;
+    min-width: 48px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 8px;
+    text-align: center;
+    background-color: none;
+    border: none;
+    color: #727272;
+    // background: -webkit-linear-gradient(top,#fff,#f5f3f4);
+
+    &:hover {
+        background-image: none;
+        background-color: #e6e9ea;
+    }
+
+    &:active {
+        background-image: none;
+        background-color: #e2e3e3;
+        // background: -webkit-linear-gradient(top,#fff,#f5f3f4);
+    }
+    .border-radius(3px);
+}
+
+.ui-commandmenu-layer {
+    border: 1px solid #c8c8c8;
+    padding: 0;
+    background: #cacaca;
+    li {
+        color: #727272;
+        height: 30px;
+        line-height: 30px;
+        margin: 1px 0 0 0;
+        padding: 0 12px;
+        background: #fff;
+        &:hover {
+            color: #fff;
+            background: #00aef3;
+        }
+        &:first-child {
+            margin: 0;
+        }
+    }
+
+    .ui-commandmenu-node-active {
+        background: #00aef3;
+        border: 1px solid #00aef3;
+        color: #fff;
+    }
+
+    box-shadow: 0 0 10px #b3b9bc;
+    .border-radius(3px);
+
+    .ui-commandmenu-node-disabled {
+        color: #999;
+    }
+}
+
+.ui-commandmenu-icon,
+.ui-commandmenu-icon:hover {
+    text-align: right;
+    background-image: url('img/commandmenu-icon.png');
+    background-position: 9px 4px;
+}
+
+.ui-refresh {
+    display: inline-block;
+    width: auto;
+    min-width: 48px;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    color: #727272;
+    padding: 0 8px;
+    background-image: url('img/commandmenu-icon.png');
+    background-position: 9px -20px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #e6e9ea;
+    }
+
+    &:active {
+        background-color: #e2e3e3;
+    }
+
+    .border-radius(3px);
+}
+

@@ -1,0 +1,216 @@
+@import "./mixin.less";
+.ui-rangecalendar {
+    display: inline-block;
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    .border-radius(0);
+    border: solid 1px #d5d5d5;
+    background: #fff;
+}
+
+.ui-rangecalendar-arrow {
+    margin-top: 6px;
+    background: url(img/esui-combo-arrow.png) no-repeat scroll left -8px #fff;
+}
+
+.ui-rangecalendar-layer {
+    border-color: #A8ADB6 #A8ADB6 #A8ADB6;
+    border-width: 1px;
+
+    .ui-monthview-month-select,
+    .ui-monthview-year-select {
+        width: 46px;
+        height: 24px;
+        line-height: 24px;
+        text-align: left;
+        padding: 0 5px;
+        border: 1px solid #d5d5d5;
+        background: url(../css/img/esui-combo-arrow.png) no-repeat scroll right -5px #fff;
+        .border-radius(3px);
+    }
+
+    .ui-rangecalendar-foot {
+        .ui-rangecalendar-okBtn,
+        .ui-rangecalendar-cancelBtn {
+            height: 30px;
+            line-height: 30px;
+            color: #fff;
+            padding: 0 20px;
+            background: #00aef3;
+            border: 1px solid #00aef3;
+            .border-radius(3px);
+
+            &:hover {
+                background: #00aef3;
+                border: 1px solid #0099e0;
+            }
+            &:active {
+                background: #0099e0;
+                border-top: 1px solid #017eb8;
+            }
+        }
+
+        .ui-rangecalendar-cancelBtn {
+            background: none;
+            color: #00aef3;
+            &:hover,
+            &:active {
+                color: #fff;
+            }
+        }
+        /*.ui-rangecalendar-okBtn,
+        .ui-rangecalendar-cancelBtn {
+            height: 30px;
+            line-height: 30px;
+
+            &:hover,
+            &active {
+                border: 1px solid #00aef3;
+                color: #00aef3;
+                background: #ddedf5;
+            };
+        }
+
+        .ui-rangecalendar-okBtn {
+            &:hover,
+            &active {
+                background: #009cda;
+                color: #fff;
+            };
+        }
+
+        .ui-rangecalendar-cancelBtn {
+            background: none;
+            color: #00aef3;
+        }*/
+    }
+
+    .ui-rangecalendar-label {
+        position: relative;
+        top: -8px;
+        left: 2px;
+    }
+}
+
+.ui-rangecalendar-shortcut {
+    display: none;
+}
+
+.ui-monthview-head {
+    .ui-monthview-month-back,
+    .ui-monthview-month-forward
+     {
+        border-style: none;
+        .border-radius(0);
+    }
+}
+
+.ui-monthview-month {
+
+    .ui-monthview-month-main {
+        tbody {
+            tr {
+                td.ui-monthview-month-item-virtual {
+                    color: #c8c8c8;
+                }
+            }
+        }
+    }
+}
+
+.ui-monthview-month-title,
+.ui-monthview-month-item {
+    font-size: 12px;
+    color: #000;
+    border: none;
+}
+
+/*.ui-monthview-month-item {
+    &:hover {
+        color: #000;
+    };
+}*/
+
+.ui-monthview-month-item-selected,
+.ui-monthview-month-item-selected:hover {
+    background: #00aef3;
+    color: #fff;
+    font-weight: normal;
+}
+
+.skin-layerClose-button {
+    border-style: none;
+    background: url(img/rangeCalendarClose.png) no-repeat center;
+    color: transparent;
+    padding: 0;
+    right: 9px;
+    top: 8px;
+}
+
+.skin-layerClose-button:hover,
+.skin-layerClose-button:active {
+    background: url(img/rangeCalendarClose.png) no-repeat center;
+    border: none;
+    right: 9px;
+    top: 8px;
+}
+
+.ui-rangecalendar-text {
+    span,
+    input {
+        width: 50px;
+        border: none;
+        border-left: 1px solid #d5d5d5;
+        padding: 0 0 0 5px;
+        margin-left: 5px;
+        font-size: 12px;
+        outline: none;
+    }
+}
+
+.ui-monthview-month-item-disabled {
+    background: none;
+    color: #c8c8c8;
+
+    &:hove {
+        color: #c8c8c8;
+    }
+}
+
+.ui-monthview-month-main tbody tr td:nth-last-child(1),
+.ui-monthview-month-main tbody tr td:nth-last-child(2) {
+    color: #f00;
+}
+
+.ui-select-item {
+    font-size: 12px;
+}
+
+.ui-range {
+    padding: 0 10px;
+}
+
+.ui-rangecalendar-date-time {
+    height: 26px;
+    line-height: 26px;
+    background: #f1f1f1;
+    text-align: center;
+    border: 1px solid #ccced4;
+    border-top: none;
+    margin-top: -1px;
+}
+
+.ui-rangecalendar-time {
+    background: #fff;
+    padding: 1px 2px;
+    margin-left: 10px;
+}
+
+.ui-rangecalendar-minute,
+.ui-rangecalendar-seconds {
+    width: 14px;
+    border: none;
+    outline: none;
+    margin: 0 4px;
+}

@@ -1,0 +1,1 @@
+define(function(require){var exports={};return exports.sayHi1=function(e,n){alert("before sayHello"+e.number)},exports.sayHi2=function(e,n){alert("after sayHello"+e.number+n.getFuncName())},exports});

@@ -1,0 +1,1 @@
+define(function(require){function e(e,t){this.modelType=e,this.viewType=t,n.apply(this,arguments)}var t=require("er/util"),n=require("er/Action");requireNode("client-vm")();return e.prototype.open=function(){this.fire("open")},e.prototype.close=function(){this.fire("close")},e.prototype.toggle=function(){this.fire("toggle")},t.inherits(e,n),e});

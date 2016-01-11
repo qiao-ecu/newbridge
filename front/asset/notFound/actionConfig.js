@@ -1,0 +1,1 @@
+define(function(require){return{"package":"notFound",resource:{Action:require("./Action"),Model:require("./Model"),View:require("./View"),tpl:require("tpl!./main.tpl")},injection:[{id:"notFound.Action",method:{constructor:["notFound.Model","notFound.View"]}}]}});

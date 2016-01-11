@@ -1,0 +1,1 @@
+define(function(require){function e(e){this.control=e}var t=require("underscore");return t.extend(e.prototype,require("./helper/children"),require("./helper/dom"),require("./helper/event"),require("./helper/html"),require("./helper/life"),require("./helper/template")),e});

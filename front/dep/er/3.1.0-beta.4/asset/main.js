@@ -1,0 +1,1 @@
+define(function(require){var e={version:"3.1.0-beta.4",start:function(){require("./controller").start(),require("./router").start(),require("./locator").start()}};return e});

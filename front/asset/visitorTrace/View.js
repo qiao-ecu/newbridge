@@ -1,0 +1,1 @@
+define(function(require,exports,module){function e(){t.apply(this,arguments)}var t=require("ef/UIView"),n=require("er/util");return require("tpl!./main.tpl"),e.prototype.template="visitorTrace",e.prototype.uiProperties={},e.prototype.uiEvents={},e.prototype.enterDocument=function(){t.prototype.enterDocument.call(this,arguments)},n.inherits(e,t),e});

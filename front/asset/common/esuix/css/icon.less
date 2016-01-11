@@ -1,0 +1,48 @@
+.ui-icon {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    width: 64px;
+    height: 56px;
+    border: solid 1px transparent;
+    margin: 6px;
+
+    &:hover,
+    &:active {
+        border: solid 1px #fff;
+        border-radius: 5px;
+    }
+    &:active {
+        opacity: 0.8;
+    }
+
+    .ui-icon-text {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        text-align: center;
+    }
+    
+    .ui-icon-notify {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 20px;
+        opacity: 1;
+        background-color: #e10f23;
+        padding: 1px 4px;
+        border-radius: 10px;
+    }
+}
+
+.ui-icon-disabled {
+    opacity: 0.6;
+    &:active {
+        opacity: 0.6;
+    }
+    &:hover,
+    &:active {
+        border: solid 1px transparent;
+    }
+}

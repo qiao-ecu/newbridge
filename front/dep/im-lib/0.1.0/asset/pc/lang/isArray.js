@@ -1,0 +1,1 @@
+define(function(){return function(e){return"[object Array]"==Object.prototype.toString.call(e)}});

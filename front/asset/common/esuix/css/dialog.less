@@ -1,0 +1,91 @@
+@import "mixin.less";
+
+.ui-dialog {
+    border: none;
+    .border-radius(0);
+    width: 500px;
+    box-shadow: 0 0 10px #9a9a9a;
+
+    .ui-dialog-text {
+        margin-top: 12px;
+        .info-title {
+            font-size: 16px;
+            line-height: 1.5em;
+            margin-bottom: 10px;
+        }
+        .info-content {
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .ui-dialog-body {
+        padding: 10px 8px 16px;
+    }
+}
+
+.ui-dialog-body-panel {
+    font-family: Microsoft Yahei;
+    padding: 20px 40px 30px 40px;
+}
+
+.ui-dialog-close-icon {
+    background-image: url(img/close.png);
+    top: 14px;
+}
+
+.ui-dialog-head {
+    background:none;
+    background-color: #00aef3;
+    height: 40px;
+}
+
+.ui-dialog-title {
+    font-family: "Microsoft YaHei";
+    line-height: 40px;
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.ui-dialog-btn-con {
+    padding-top: 2px;
+
+    .ui-button {
+        margin-right: 10px;
+    }
+}
+
+.ui-dialog-cont {
+    margin-left: 129px;
+}
+
+.skin-ok-dialog-body {
+    .ui-dialog-icon {
+        .fl(left);
+        width: 76px;
+        height: 76px;
+        background: url(img/ok.png);
+        margin: 18px 0 0 0;
+    }
+}
+
+.skin-dialog-warn {
+    .ui-dialog-icon {
+        .fl(left);
+        width: 89px;
+        height: 80px;
+        background-image: url(img/alarm.png);
+        margin: 18px 0 0 0;
+    }
+}
+
+.skin-warn-dialog-body {
+    .skin-dialog-warn();
+}
+.skin-alert-dialog-body {
+    .skin-dialog-warn();
+    .ui-dialog-text {
+        margin: 0;
+    }
+}
