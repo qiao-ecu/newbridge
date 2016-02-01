@@ -74,10 +74,11 @@ var Model = function(name, attributes, options) {
     }
   });
 
-  this.attributes = this.rawAttributes = Utils._.mapValues(attributes, function(attribute, name) {
-    if (!Utils._.isPlainObject(attribute)) {
-      attribute = { type: attribute };
-    }
+ this.attributes = this.rawAttributes = Utils._.mapValues(attributes, function(attribute, name) {
+   if (!Utils._.isPlainObject(attribute)) {
+     attribute = { type: attribute };
+   }
+
 
     attribute = this.sequelize.normalizeAttribute(attribute);
 
@@ -923,7 +924,14 @@ Model.prototype.refreshAttributes = function() {
   this.Instance.prototype._hasCustomGetters = Object.keys(this.Instance.prototype._customGetters).length;
   this.Instance.prototype._hasCustomSetters = Object.keys(this.Instance.prototype._customSetters).length;
 
-  Object.defineProperties(this.Instance.prototype, attributeManipulation);
+  Object.keys(attributeManipulation).forEach((function(key){
+    if (Instance.prototype.hasOwnProperty(key)) {
+      this.sequelize.log("Not overriding built-in method from model attribute: " + key);
+      return;
+    }
+    Object.defineProperty(this.Instance.prototype, key, attributeManipulation[key]);
+  }).bind(this));
+
 
   this.Instance.prototype.rawAttributes = this.rawAttributes;
   this.Instance.prototype.attributes = Object.keys(this.Instance.prototype.rawAttributes);
@@ -2401,6 +2409,7 @@ Model.prototype.restore = function(options) {
  * @param  {Function}     [options.logging=false] A function that gets executed while running the query to log the sql.
  * @param  {Boolean}      [options.benchmark=false] Print query execution time in milliseconds when logging SQL.
  * @param  {Transaction}  [options.transaction] Transaction to run query under
+ * @param  {Boolean}      [options.silent=false] If true, the updatedAt timestamp will not be updated.
  *
  * @return {Promise<Array<affectedCount,affectedRows>>}
  */
@@ -2442,7 +2451,7 @@ Model.prototype.update = function(values, options) {
     }
   }
 
-  if (this._timestampAttributes.updatedAt) {
+  if (this._timestampAttributes.updatedAt && !options.silent) {
     values[this._timestampAttributes.updatedAt] = this.$getDefaultTimestamp(this._timestampAttributes.updatedAt) || Utils.now(this.sequelize.options.dialect);
   }
 

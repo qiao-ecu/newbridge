@@ -1,1 +1,1 @@
-define(function(require){window.requireNode=window.require;var exports=(window.require,{});return exports.init=function(){require("er/main").start()},exports});
+define(function(require){window.requireNode=window.require;var exports=(window.require,{});return exports.init=function(){console.log("start"),require("er/main").start()},exports});

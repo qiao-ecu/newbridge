@@ -23,3 +23,39 @@
         cursor: pointer;
     }
 }
+
+
+.chat-area-unread {
+    position: absolute;
+    bottom: 12px;
+    right: 3px;
+    padding: 4px 6px;
+    border-radius: 3px;
+    background-color: #fb954a;
+    color: #fff;
+}
+.chat-area-arrow {
+    position: absolute;
+    bottom: 1px;
+    left: 34px;
+
+    em,
+    ins {
+        width: 0;
+        height: 0;
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        position: absolute;
+        border: 8px solid transparent;
+        border-style: solid dashed dashed dashed;
+        border-color: transparent;
+    }
+    em {
+        top: 1px;
+        border-top-color: #fb954a;
+    }
+    ins {
+        border-top-color: #fb954a;
+    }
+}
