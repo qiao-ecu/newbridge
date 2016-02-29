@@ -5753,6 +5753,7 @@ input[type="radio"]:disabled:checked:after {
   width: 208px;
   height: 100%;
   background: url(../login/css/img/banner.png) no-repeat;
+  background-size: 208px 420px;
   -webkit-app-region: drag;
 }
 .login-right {
@@ -6259,6 +6260,14 @@ input[type="radio"]:disabled:checked:after {
   background: url(../iconMenu/css/img/mobile.png) no-repeat 3px 9px;
   background-size: 54px 30px;
   float: right;
+}
+.icon-menu-leave-message-icon {
+  background: url(../iconMenu/css/img/message.png) no-repeat 5px 9px;
+  background-size: 54px 30px;
+}
+.icon-menu-report-icon {
+  background: url(../iconMenu/css/img/report.png) no-repeat 5px 9px;
+  background-size: 54px 30px;
 }
 .vistor-trace-contain {
   min-height: 40px;
