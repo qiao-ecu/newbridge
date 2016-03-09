@@ -1,1 +1,1 @@
-define(function(require,exports,module){function e(){n.apply(this,arguments)}var t=require("er/util"),n=require("ef/UIModel");return e.prototype.datasource={},t.inherits(e,n),e});
+define(function(require,exports,module){function e(){n.apply(this,arguments)}var t=require("er/util"),n=require("ef/UIModel"),i=requireNode("client-vm")(),r=require("er/datasource"),a=r.constant;return e.prototype.datasource={leaveMessage:a(i.data("vm:notify","bookInitCnt","bookInitCnt"))},t.inherits(e,n),e});

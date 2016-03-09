@@ -19,6 +19,9 @@
         </div>
         <div class="customer-tip-detail">
             <div class="customer-tip-row">
+                <span class="customer-tip-title">访客永久身份：</span>${infos.id}
+            </div>
+            <div class="customer-tip-row">
                 <!-- if: ${infos.tipsInfo.visitPages} -->
                 <div class="customer-tip-row-left">
                     <span class="customer-tip-title">访问页：</span>${infos.tipsInfo.visitPages}页

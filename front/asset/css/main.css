@@ -5500,6 +5500,7 @@ input[type="radio"]:disabled:checked:after {
   width: 14px;
   height: 14px;
   background: url(../common/esuix/css/img/icon/360.png) no-repeat;
+  background-size: 12px 12px;
 }
 .visitor-list-from-engine-15 {
   width: 14px;
@@ -5578,7 +5579,7 @@ input[type="radio"]:disabled:checked:after {
   position: absolute;
   top: 0;
   right: 0;
-  height: 20px;
+  height: 18px;
   opacity: 1;
   background-color: #e10f23;
   padding: 1px 4px;
@@ -6267,6 +6268,18 @@ input[type="radio"]:disabled:checked:after {
 }
 .icon-menu-report-icon {
   background: url(../iconMenu/css/img/report.png) no-repeat 5px 9px;
+  background-size: 54px 30px;
+}
+.icon-menu-account-icon {
+  background: url(../iconMenu/css/img/account.png) no-repeat 5px 9px;
+  background-size: 54px 30px;
+}
+.icon-menu-role-icon {
+  background: url(../iconMenu/css/img/role.png) no-repeat 5px 9px;
+  background-size: 54px 30px;
+}
+.icon-menu-site-icon {
+  background: url(../iconMenu/css/img/site.png) no-repeat 5px 9px;
   background-size: 54px 30px;
 }
 .vistor-trace-contain {
